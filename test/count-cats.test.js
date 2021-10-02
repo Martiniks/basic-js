@@ -4,6 +4,7 @@ import countCats from '../src/count-cats.js';
 
 it.optional = testOptional;
 
+
 Object.freeze(expect);
 Object.freeze(assert);
 
@@ -23,6 +24,7 @@ const fakeRandom = ({ rows, cols, stringSet }) => {
   const backyard = Array(rows).fill(1).map((_, rowIdx) => Array(cols).fill(1).map((_, colIdx, arr) => generate(rowIdx, colIdx, arr)));
   return { count, backyard };
 }
+
 
 describe('Count cats!', () => {
   // Presence requirement
