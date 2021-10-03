@@ -15,7 +15,6 @@ export default function getSeason(date) {
     if (!date) {
         return 'Unable to determine the time of year!'
     }
-    let ndate = new Date(date);
     if (!(date instanceof Date)) {
         throw new Error('Invalid date!')
     }
