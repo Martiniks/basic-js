@@ -1,4 +1,5 @@
 import {NotImplementedError} from '../extensions/index.js';
+import {assert} from "chai";
 
 /**
  * There's a list of file, since two files cannot have equal names,
@@ -25,4 +26,5 @@ export default function renameFiles(names) {
             }
         }
     }
+    return names;
 }
